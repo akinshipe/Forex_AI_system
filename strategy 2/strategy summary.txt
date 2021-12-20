@@ -1,0 +1,20 @@
+
+acceptable_signal_percent = 70
+
+analysis_span = 52
+
+analysis_interval = 3
+
+no_of_weeks_analysis = [c for c in range(0, analysis_span, analysis_interval)]
+
+
+
+
+  if (100 * needed_direction_list.count('S') / len(needed_direction_list) ) > acceptable_signal_percent:
+            
+            next_week_trade.append({'name': f['name'], 'direction': 'S'})
+        
+  if ( 100 * needed_direction_list.count('B') / len(needed_direction_list) ) > acceptable_signal_percent:
+            
+            next_week_trade.append({'name': f['name'], 'direction': 'B'})
+    
